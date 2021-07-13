@@ -51,10 +51,10 @@ async def update_admin(client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "Group Support", url="https://t.me/SharingUserbot"
+                        "Group Support", url="https://t.me/XXXsquad_18plus"
                     ),
                     InlineKeyboardButton(
-                        "Owner", url="https://t.me/mrismanaziz"
+                        "Owner", url="https://t.me/lifeinsinn"
                     )
                 ]
             ]
@@ -70,7 +70,7 @@ async def pause(_, message: Message):
     if (chat_id not in callsmusic.active_chats) or (
         callsmusic.active_chats[chat_id] == "paused"
     ):
-        await message.reply_text("❗ **Tidak ada Lagu yang sedang diputar!**")
+        await message.reply_text("❗ **Goblok,ga ada lagu yg sedang diputer!**")
     else:
         callsmusic.pause(chat_id)
         await message.reply_text("▶️ **Paused!**")
@@ -96,7 +96,7 @@ async def resume(_, message: Message):
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.active_chats:
-        await message.reply_text("❗ **Tidak ada Lagu yang sedang diputar!**")
+        await message.reply_text("❗ **Ga ada lagu yang diputer bego!**")
     else:
         try:
             queues.clear(chat_id)
@@ -114,7 +114,7 @@ async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
     if chat_id not in callsmusic.active_chats:
-        await message.reply_text("❗ **Tidak ada Lagu Selanjutnya untuk dilewati!**")
+        await message.reply_text("❗ **Tolol ! Tidak ada Lagu Selanjutnya untuk dilewati!**")
     else:
         queues.task_done(chat_id)
         if queues.is_empty(chat_id):
