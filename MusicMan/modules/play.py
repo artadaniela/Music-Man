@@ -1186,7 +1186,7 @@ async def lol_cb(b, cb):
             [
                 [
                     InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
-                    InlineKeyboardButton("⛑ Channel", url="https://t.me/Lunatic0de"),
+                    InlineKeyboardButton("⛑ Group sex", url="https://t.me/XXXsquad_18plus"),
                 ],
                 [InlineKeyboardButton(text="🗑 Close", callback_data="cls")],
             ]
